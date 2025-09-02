@@ -3,6 +3,7 @@
     --accent-color: #34547a;
     --color-black: #000000;
     --white: #ffffff;
+    --text: #727272;
 }
 
 body {
@@ -73,10 +74,11 @@ h6 {
 .section-herro__title {
     font-size: 48px;
     margin-bottom: 60px;
+    color: var(--color-black);
 }
 
 .section-herro__desc {
-    color: var(--accent-color);
+    color: var(--text);
     margin-bottom: 40px;
 }
 
@@ -110,7 +112,7 @@ h6 {
 .about__desc {
     max-width: 540px;
     margin: 0 auto;
-    color: var(--color-black);
+    color: var(--text);
 }
 
 /* ===== Projects ===== */
@@ -159,7 +161,7 @@ h6 {
 .process__desc {
     max-width: 540px;
     margin: 0 auto 60px auto;
-    color: var(--color-black);
+    color: var(--text);
 }
 
 .process__video {
