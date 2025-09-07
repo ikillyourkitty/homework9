@@ -54,15 +54,36 @@ h6 {
 }
 
 .navigation__link {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-black);
     letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.navigation__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.navigation__link:hover {
+    color: var(--accent-color);
 }
 
 .navigation__link--active {
     color: var(--accent-color);
     font-weight: 500;
+}
+
+.navigation__link:hover::after {
+    width: 100%;
 }
 
 /* ===== Hero Section ===== */
@@ -100,6 +121,12 @@ h6 {
     align-items: center;
     font-weight: 500;
     border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-hero__link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(52, 84, 122, 0.4);
 }
 
 /* ===== About ===== */
